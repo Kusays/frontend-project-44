@@ -33,7 +33,7 @@ for (let i = 0; i < 3; i += 1) {
     correctAnswer = num1 * num2;
   }
 
-  if (answer === correctAnswer) {
+  if (parseInt(answer, 10) === correctAnswer) {
     console.log('Correct!');
     counter += 1;
   } else {

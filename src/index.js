@@ -11,6 +11,7 @@ export function sayHi() {
 
 export function wrongAnswer(name, answer, correctAnswer) {
   console.log(`'${answer}'`, `is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again,`, `${name}!`);
+  process.exit(0);
 }
 
 export function getRandomInt(max) {

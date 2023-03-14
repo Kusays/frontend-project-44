@@ -27,7 +27,6 @@ for (let i = 0; i < 3; i += 1) {
     counter += 1;
   } else {
     wrongAnswer(name, answer, correctAnswer);
-    break;
   }
 }
 
