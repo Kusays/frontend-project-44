@@ -30,6 +30,7 @@ for (let i = 0; i < 3; i += 1) {
   } else {
     correctAnswer = NOD(num1, num2);
     wrongAnswer(name, answer, correctAnswer);
+    break;
   }
 }
 
