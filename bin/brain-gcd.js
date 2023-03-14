@@ -23,8 +23,7 @@ for (let i = 0; i < 3; i += 1) {
   console.log('Question:', num1, num2);
 
   const answer = readlineSync.question('Your answer: ');
-
-  if (answer === NOD(num1, num2)) {
+  if (parseInt(answer, 10) === NOD(num1, num2)) {
     console.log('Correct!');
     counter += 1;
   } else {
