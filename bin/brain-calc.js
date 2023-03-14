@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 import {
-  sayHi, getRandomInt, congratulations, check
+  sayHi, getRandomInt, congratulations, check,
 } from '../src/index.js';
 
 const name = sayHi();
