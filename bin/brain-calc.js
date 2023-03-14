@@ -20,7 +20,7 @@ for (let i = 0; i < 3; i += 1) {
   const num2 = getRandomInt(50);
   const sign = signs();
 
-  console.log('Question: ', num1, sign, num2);
+  console.log('Question:', num1, sign, num2);
   const answer = readlineSync.question('Your answer: ');
 
   let correctAnswer = 0;
