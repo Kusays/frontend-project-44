@@ -32,7 +32,7 @@ for (let i = 0; i < 3; i += 1) {
   console.log('Question:', str);
   const answer = readlineSync.question('Your answer: ');
 
-  if (answer === correctAnswer) {
+  if (parseInt(answer, 10) === correctAnswer) {
     console.log('Correct!');
     counter += 1;
   } else {
