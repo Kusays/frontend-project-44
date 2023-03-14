@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import cli from '../src/cli';
+// eslint-disable-next-line import/extensions
+import cli from '../src/cli.js';
 
 cli.sayHi();
