@@ -16,10 +16,10 @@ for (let i = 0; i < 3; i += 1) {
   if (num > 1) {
     for (let j = 2; j < num; j += 1) {
       if (num % i === 0) {
-        correctAnswer = 'yes';
+        correctAnswer = 'no';
       }
     }
-    correctAnswer = 'no';
+    correctAnswer = 'yes';
   }
   console.log('Question:', num);
   const answer = readlineSync.question('Your answer: ');
