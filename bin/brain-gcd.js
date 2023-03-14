@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import {
   sayHi, wrongAnswer, getRandomInt, congratulations,
-} from '../src/index';
+} from '../src/index.js';
 
 function NOD(x, y) {
   if (y > x) return NOD(y, x);

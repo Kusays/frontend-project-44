@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { sayHi, wrongAnswer, getRandomInt } from '../src/index';
+import { sayHi, wrongAnswer, getRandomInt } from '../src/index.js';
 
 const name = sayHi();
 let correctAnswer;

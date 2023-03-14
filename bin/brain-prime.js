@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import {
   sayHi, wrongAnswer, getRandomInt, congratulations,
-} from '../src/index';
+} from '../src/index.js';
 
 const name = sayHi();
 let counter = 0;
