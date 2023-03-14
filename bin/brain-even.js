@@ -10,7 +10,7 @@ let counter = 0;
 
 for (let i = 0; i < 3; i += 1) {
   const randomNum = getRandomInt(50);
-  console.log('Question: ', randomNum);
+  console.log('Question:', randomNum);
   const answer = readlineSync.question('Your answer: ');
   if (randomNum % 2 === 0) {
     if (answer === 'yes') {
