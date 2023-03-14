@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 import {
-  sayHi, wrongAnswer, getRandomInt, congratulations,
+  sayHi, getRandomInt, congratulations, check
 } from '../src/index.js';
 
 const name = sayHi();
@@ -33,13 +33,7 @@ for (let i = 0; i < 3; i += 1) {
     correctAnswer = num1 * num2;
   }
 
-  if (parseInt(answer, 10) === correctAnswer) {
-    console.log('Correct!');
-    counter += 1;
-  } else {
-    wrongAnswer(name, answer, correctAnswer);
-    break;
-  }
+  counter += check(answer, correctAnswer, name);
 }
 
 congratulations(counter, name);

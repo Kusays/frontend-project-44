@@ -26,7 +26,6 @@ for (let i = 0; i < 3; i += 1) {
   } else {
     correctAnswer = 'no';
     wrongAnswer(name, answer, correctAnswer);
-    break;
   }
 }
 

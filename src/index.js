@@ -23,3 +23,12 @@ export function congratulations(counter, name) {
     console.log('Congratulations,', `${name}!`);
   }
 }
+
+export function check(answer, correctAnswer, name) {
+  if (parseInt(answer, 10) === correctAnswer) {
+    console.log('Correct!');
+    return 1;
+  }
+  wrongAnswer(name, answer, correctAnswer);
+  return 0;
+}
