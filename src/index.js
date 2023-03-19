@@ -32,3 +32,24 @@ export function check(answer, correctAnswer, name) {
   wrongAnswer(name, answer, correctAnswer);
   return 0;
 }
+
+export function checkNotNum(answer, correctAnswer, name) {
+  if (answer === correctAnswer) {
+    console.log('Correct!');
+    return 1;
+  }
+  wrongAnswer(name, answer, correctAnswer);
+  return 0;
+}
+
+export function engine(rules, main) {
+  const name = sayHi();
+  console.log(rules);
+  let counter = 0;
+
+  for (let i = 0; i < 3; i += 1) {
+    counter = main(counter, name);
+  }
+
+  congratulations(counter, name);
+}
