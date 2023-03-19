@@ -28,6 +28,6 @@ function brainPrime() {
 
     checkNotNum(answer, correctAnswer, name);
     return counter + 1;
-  })
+  });
 }
 export default { brainPrime };

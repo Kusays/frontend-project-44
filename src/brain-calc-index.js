@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 import {
-  sayHi, getRandomInt, congratulations, check, engine,
+  getRandomInt, check, engine,
 } from './index.js';
 
 function signs() {
