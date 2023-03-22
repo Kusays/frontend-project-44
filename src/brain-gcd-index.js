@@ -5,12 +5,12 @@ import {
   engine, wrongAnswer, getRandomInt,
 } from './index.js';
 
-function brainGcd() {
-  function NOD(x, y) {
+const brainGcd = () => {
+  const NOD = (x, y) => {
     if (y > x) return NOD(y, x);
     if (!y) return x;
     return NOD(y, x % y);
-  }
+  };
 
   engine('Find the greatest common divisor of given numbers.', (counter, name) => {
     const num1 = getRandomInt(100);
@@ -24,6 +24,6 @@ function brainGcd() {
     wrongAnswer(name, answer, NOD(num1, num2));
     return counter;
   });
-}
+};
 
 export default { brainGcd };

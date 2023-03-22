@@ -5,7 +5,7 @@ import {
   getRandomInt, check, engine,
 } from './index.js';
 
-function brainProgression() {
+const brainProgression = () => {
   engine('What number is missing in the progression?', (counter, name) => {
     const arr = [];
     let start = getRandomInt(100);
@@ -30,6 +30,6 @@ function brainProgression() {
     check(answer, correctAnswer, name);
     return counter + 1;
   });
-}
+};
 
 export default { brainProgression };

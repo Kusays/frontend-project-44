@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import { engine, wrongAnswer, getRandomInt } from './index.js';
 
-function brainEven() {
+const brainEven = () => {
   engine('Answer "yes" if the number is even, otherwise answer "no".', (counter, name) => {
     let correctAnswer;
     const randomNum = getRandomInt(50);
@@ -25,6 +25,6 @@ function brainEven() {
     }
     return counter;
   });
-}
+};
 
 export default { brainEven };

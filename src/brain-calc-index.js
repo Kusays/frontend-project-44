@@ -5,13 +5,13 @@ import {
   getRandomInt, check, engine,
 } from './index.js';
 
-function signs() {
+const signs = () => {
   const arr = ['+', '-', '*'];
   const rand = Math.floor(Math.random() * arr.length);
   return arr[rand];
-}
+};
 
-function brainCalc() {
+const brainCalc = () => {
   engine('What is the result of the expression?', (counter, name) => {
     const num1 = getRandomInt(50);
     const num2 = getRandomInt(50);
@@ -33,5 +33,5 @@ function brainCalc() {
     check(answer, correctAnswer, name);
     return counter + 1;
   });
-}
+};
 export default { brainCalc };

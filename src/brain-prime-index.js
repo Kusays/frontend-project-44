@@ -5,15 +5,15 @@ import {
   getRandomInt, engine, checkNotNum,
 } from './index.js';
 
-function brainPrime() {
-  function isPrime(number) {
+const brainPrime = () => {
+  const isPrime = (number) => {
     if (number <= 1) { return false; }
 
     for (let i = 2; i * i <= number; i += 1) {
       if (number % i === 0) { return false; }
     }
     return true;
-  }
+  };
 
   engine('Answer "yes" if given number is prime. Otherwise answer "no".', (counter, name) => {
     const num = getRandomInt(100);
@@ -29,5 +29,5 @@ function brainPrime() {
     checkNotNum(answer, correctAnswer, name);
     return counter + 1;
   });
-}
+};
 export default { brainPrime };
